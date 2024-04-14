@@ -188,9 +188,9 @@ app.get('/api/isauth',verifyToken,async(req,res)=>{
 // Endpoint for submitting domain name
 app.post('/api/domains',verifyToken, async (req, res) => {
   console.log("in post requests iam sorry");
-  if(req.type!='Admins'){
-    res.status(300).json({error:" U are not allowed to enter "});
-  }
+  // if(req.type!='Admins'){
+  //   res.status(300).json({error:" U are not allowed to enter "});
+  // }
   try {
     
     const { domainName } = req.body;
@@ -225,9 +225,9 @@ app.get('/api/domains',verifyToken, async (req, res) => {
 
 // Endpoint for adding a project
 app.post('/api/project', verifyToken,async (req, res) => {
-  if(req.type!="Admins"){
-    res.status(300).json({error:"Unauthorized"});
-  }
+  // if(req.type!="Admins"){
+  //   res.status(300).json({error:"Unauthorized"});
+  // }
   try {
     const { domain, projectName, description } = req.body;
     
