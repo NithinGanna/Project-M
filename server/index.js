@@ -5,11 +5,11 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors'; // Import CORS middleware
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'
+import dotenv from 'dotenv';
 
 const app = express();
 const PORT = 5000;
 
-import dotenv from 'dotenv';
 dotenv.config();
 
 const DB_URL = process.env.MONGODB_URL;
