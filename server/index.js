@@ -12,10 +12,6 @@ const PORT = 5000;
 import dotenv from 'dotenv';
 dotenv.config();
 
-// MongoDB connection
-// const DB_URL = 'mongodb://127.0.0.1:27017/projectsDB';
-// const JWT_SECRET="your-secret-key";
-
 const DB_URL = process.env.MONGODB_URL;
 const JWT_SECRET = process.env.JWT_SECRET;
 
