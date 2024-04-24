@@ -10,8 +10,8 @@ const Home = () => {
           <h1 className="display-4">Welcome to the Projects Section</h1>
           <p className="lead">Explore and manage your projects with ease.</p>
           <hr className="my-4" />
-          <p>Click on "<a href='/New'>Admin</a>" to access admin features or "<a href='/Projects'>User</a>" for user features.</p>
-          <p>Navigate to respective roles with the help of Navbar</p>
+          <p>Click on "<a href='/New'>New Project</a>" to post your new project or "<a href='/Projects'>Projects</a>" viewing all projects.</p>
+          <p>Navigate to respective pages with the help of Navbar</p>
         </div>
       </div>
     </div>
